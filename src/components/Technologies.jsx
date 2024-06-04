@@ -4,7 +4,6 @@ import { FaDatabase, FaPython } from "react-icons/fa";
 import { SiFlask } from "react-icons/si";
 import powerbi from "../assets/powerbi.png";
 import { motion } from "framer-motion";
-import { isStyledComponent } from "styled-components";
 
 const iconVariants = (duration) => ({
   initial: { y: -10 },
