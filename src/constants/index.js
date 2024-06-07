@@ -1,7 +1,11 @@
-import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import project1 from "../assets/drone.jpg";
+import project2 from "../assets/dashboard.png";
+import project3 from "../assets/agri.png";
+import project4 from "../assets/portfolio.jpg";
+import intern from "../assets/intern.jpg";
+import powerbi from "../assets/power.jpg";
+import python from "../assets/python.webp";
+import pass from "../assets/passport.jpg";
 
 export const HERO_CONTENT = `I'm an enthusiastic and ambitious developer, eager to kickstart my career in the tech industry. With a strong foundation in computer science and a passion for building innovative solutions, I've been actively working on various projects to hone my skills. My portfolio showcases my journey so far, featuring projects that demonstrate my understanding of front-end technologies like React and my ability to work with modern tools like Vite. I'm excited to continue learning and growing as a developer, and I'm looking forward to collaborating with others to create impactful and user-friendly applications.`;
 
@@ -63,13 +67,43 @@ export const PROJECTS = [
   {
     title: "Personal Portfolio Webpage",
     image: project4,
-    description: "A showcase of my skills and experiences, built with React and Vite. This portfolio webpage features a responsive design, interactive components, and a clean user interface. It's a demonstration of my ability to design and develop a modern web application using cutting-edge technologies.",
+    description:
+      "A showcase of my skills and experiences, built with React and Vite. This portfolio webpage features a responsive design, interactive components, and a clean user interface. It's a demonstration of my ability to design and develop a modern web application using cutting-edge technologies.",
     technologies: ["React", "Vite"],
   },
 ];
 
 export const CONTACT = {
-  address: "767 Fifth Avenue, New York, NY 10153 ",
-  phoneNo: "+12 4555 666 00 ",
-  email: "me@example.com",
+  name: "Sathish S",
+  image: pass,
+  address: "5/317, Gandiji Street, Nagathamman Nagar, Thiruninravur - 602024",
+  phoneNo: "+91 9962242351 ",
+  email: "sathishsrini499@gmail.com",
 };
+
+export const COURSES = [
+  {
+    title: "Data Analytics Internship",
+    description:
+      "Successfully completed the Internship Data Analytics platform from December 2023 to March 2024. Exposed to different processes and found to be Punctual, Hard Working and Inquisitive.",
+    image: intern, // You can add an image URL here if needed
+    issuedBy: "Shiash Info Solutions Private Limited",
+    date: "2023-12-01 - 2024-03-01",
+  },
+  {
+    title: "Data Analytics Certificate",
+    description:
+      "Built multiple dashboards with Power BI. Learned how to work with large datasets. Built and visualized data using Power BI.",
+    image: powerbi,
+    issuedBy: "Atos Prayas Foundation",
+    date: "2023-08-16 - 2023-09-08",
+  },
+  {
+    title: "Python Certificate",
+    description:
+      "Learned Python programming language Built several mini projects to demonstrate proficiency",
+    image: python,
+    issuedBy: "SkillVertex",
+    date: "2023-08-16 - 2023-09-08",
+  },
+];
