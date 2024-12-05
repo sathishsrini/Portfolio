@@ -19,19 +19,19 @@ const Navbar = () => {
         />
         <FaGithub
           onClick={() =>
-            (window.location.href = "https://github.com/yourprofile")
+            (window.location.href = "https://github.com/sathishsrini")
           }
           className="cursor-pointer"
         />
         <FaInstagram
           onClick={() =>
-            (window.location.href = "https://www.instagram.com/yourprofile")
+            (window.location.href = "https://www.instagram.com/s_athish_s/")
           }
           className="cursor-pointer"
         />
         <FaSquareXTwitter
           onClick={() =>
-            (window.location.href = "https://twitter.com/yourprofile")
+            (window.location.href = "https://x.com/Sathish_fly")
           }
           className="cursor-pointer"
         />
