@@ -13,7 +13,7 @@ const Navbar = () => {
         <FaLinkedin
           onClick={() =>
             (window.location.href =
-              "https://www.linkedin.com/in/sathish-it-a48230287/")
+              "https://www.linkedin.com/in/sathishspringbootdeveloper/")
           }
           className="cursor-pointer"
         />
