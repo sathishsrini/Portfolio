@@ -6,10 +6,13 @@ import intern from "../assets/intern.jpg";
 import powerbi from "../assets/power.jpg";
 import python from "../assets/python.webp";
 import pass from "../assets/passport.jpg";
+import jfs from "../assets/Java-Full-Stack.png"
+import ec from "../assets/ec1.jpg"
 
-export const HERO_CONTENT = `I'm an enthusiastic and ambitious developer, eager to kickstart my career in the tech industry. With a strong foundation in computer science and a passion for building innovative solutions, I've been actively working on various projects to hone my skills. My portfolio showcases my journey so far, featuring projects that demonstrate my understanding of front-end technologies like React and my ability to work with modern tools like Vite. I'm excited to continue learning and growing as a developer, and I'm looking forward to collaborating with others to create impactful and user-friendly applications.`;
+export const HERO_CONTENT = `I'm a passionate Java Full Stack Developer with a strong foundation in web development, database management, and software version control. Proficient in Java, React.js, Spring Boot, and modern technologies, I specialize in building scalable and high-performance web applications. My portfolio showcases projects that demonstrate my expertise in both front-end and back-end development, including e-commerce platforms and AI-powered solutions. Eager to collaborate and contribute to innovative projects, I continuously explore new technologies to enhance my skills and create impactful applications.`;
+export const ABOUT_TEXT = `I'm a dedicated Full Stack Developer with hands-on experience in Java, React.js, and Spring Boot. My journey in web development started with a deep curiosity about how applications work, leading me to develop dynamic and scalable web solutions. I have experience building full-stack applications, including e-commerce platforms and AI-powered tools, integrating technologies such as MySQL, Firebase authentication, and REST APIs. 
 
-export const ABOUT_TEXT = `I'm an aspiring full stack developer, eager to start my career in the tech industry. With a solid foundation in computer science and a passion for building web applications, I've been actively working on various projects to develop my skills and showcase my creativity. My journey in web development began with a deep curiosity for how things work, and I'm excited to continue learning and growing as a developer. I enjoy solving complex problems, collaborating with others, and delivering high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+I am passionate about solving complex problems, writing clean and efficient code, and continuously learning new technologies. My expertise spans front-end development using React and Bootstrap, as well as back-end development with Spring Boot (MVC) and MySQL for database management. I thrive in collaborative environments and enjoy contributing to high-impact projects that enhance user experiences. Outside of coding, I explore new advancements in AI, work on open-source projects, and stay active in the developer community.`;
 
 export const EXPERIENCES = [
   {
@@ -44,7 +47,14 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "Journalist website",
+    title: "E-Commerce Platform",
+    image: ec, // You can use an appropriate image for the e-commerce project
+    description:
+      "Developed a dynamic, full-stack e-commerce platform designed to manage product listings, user authentication, and order processing with seamless performance and scalability. Implemented a responsive UI with Bootstrap, Spring Boot services for CRUD operations, and MySQL for efficient data handling.",
+    technologies: ["Spring Boot", "Bootstrap", "MySQL", "Thymeleaf"],
+  },
+  {
+    title: "Journalist Website",
     image: project1,
     description:
       "Developed an AI-powered system using a DJI Tello Drone for real-time object detection and tracking of a specific person (journalist) using a custom-trained YOLOv8 model. The system includes a user-friendly website built with React for drone control and footage management, integrating Firebase authentication for user login/register and MySQL database for local storage of drone footage.",
@@ -61,7 +71,7 @@ export const PROJECTS = [
     title: "Agriculture Management System",
     image: project3,
     description:
-      "Developed an Agriculture Management System using Angular and Python, which included a website with voice search functionality for agriculture queries.NLTK (Natural Language Toolkit) was utilized to build the voice search feature. ",
+      "Developed an Agriculture Management System using Angular and Python, which included a website with voice search functionality for agriculture queries. NLTK (Natural Language Toolkit) was utilized to build the voice search feature.",
     technologies: ["Angular", "Firebase", "Mysql"],
   },
   {
@@ -82,6 +92,13 @@ export const CONTACT = {
 };
 
 export const COURSES = [
+  {
+    title: "Java Full Stack Development Course",
+    description: "Completed a comprehensive Java Full Stack Development course, gaining expertise in Java, Spring Boot, React.js, and MySQL for building scalable and responsive web applications.",
+    image: jfs, // You can add an image URL here if needed
+    issuedBy: "Oranium Tech Institute",
+    date: "Oct 2024 - Dec 2024",
+  },
   {
     title: "Data Analytics Internship",
     description:
