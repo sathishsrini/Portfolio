@@ -30,45 +30,32 @@ const Navbar = () => {
         <FaLinkedin
           onClick={() =>
             (window.location.href =
-<<<<<<< HEAD
-              "https://www.linkedin.com/in/komathi-m-76417424a/")
-          }
-          className="cursor-pointer text-black-600 hover:text-white transition duration-300"
-=======
               "https://www.linkedin.com/in/sathishspringbootdeveloper/")
           }
           className="cursor-pointer hover:text-blue-500 transition duration-300"
->>>>>>> master
+
         />
         <FaGithub
           onClick={() =>
             (window.location.href = "https://github.com/sathishsrini")
           }
-<<<<<<< HEAD
-          className="cursor-pointer text-black-600 hover:text-white transition duration-300"
-=======
+
           className="cursor-pointer hover:text-gray-700 transition duration-300"
->>>>>>> master
+
         />
         <FaInstagram
           onClick={() =>
             (window.location.href = "https://www.instagram.com/s_athish_s/")
           }
-<<<<<<< HEAD
-          className="cursor-pointer text-black-600 hover:text-white transition duration-300"
-=======
+
           className="cursor-pointer hover:text-pink-500 transition duration-300"
->>>>>>> master
         />
         <FaSquareXTwitter
           onClick={() =>
             (window.location.href = "https://x.com/Sathish_fly")
           }
-<<<<<<< HEAD
-          className="cursor-pointer text-black-600 hover:text-white transition duration-300"
-=======
           className="cursor-pointer hover:text-black transition duration-300"
->>>>>>> master
+
         />
       </div>
     </nav>
