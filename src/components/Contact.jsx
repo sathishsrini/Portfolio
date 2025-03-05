@@ -2,7 +2,6 @@ import React from "react";
 import { CONTACT } from "../constants/index";
 import { motion } from "framer-motion";
 
-
 function Contact() {
   return (
     <div className="border-b border-neutral-900 pb-4 px-4">

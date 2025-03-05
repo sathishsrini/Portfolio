@@ -18,17 +18,10 @@ I am passionate about solving complex problems, writing clean and efficient code
 export const EXPERIENCES = [
   {
     year: "2023",
-    role: "Web Developer Intern",
-    company: "ELEWAYTE - WIPRO",
-    description: `Web development for creating a website on an online platform. Managed a high-performing marketing team, fostering a collaborative and results-driven work environment. Monitored brand consistency across marketing channels and materials.`,
-    technologies: ["HTML", "CSS", "React.js"],
-  },
-  {
-    year: "2024",
-    role: "Web Developer Intern",
-    company: "ZIDIO INFO TECH",
-    description: `Web development for real-time chat application creation using MERN Stack Technology.`,
-    technologies: ["MongoDB", "Express.js", "React.js", "Node.js"],
+    role: "Data Analytics Intern",
+    company: "Shiash Info Solutions Private Limited",
+    description: `Completed a Data Analytics internship, working on real-time data visualization, dashboard creation, and analysis using Power BI and SQL.`,
+    technologies: ["Power BI", "SQL", "Data Visualization"],
   },
 ];
 

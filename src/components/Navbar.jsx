@@ -1,9 +1,8 @@
 import React from "react";
-import logo from "../assets/l.png";
+import logo from "../assets/logo.png";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import resume from "../assets/resume.pdf";
-
 
 const Navbar = () => {
   // Function to handle the Resume button click
@@ -32,30 +31,19 @@ const Navbar = () => {
             (window.location.href =
               "https://www.linkedin.com/in/sathishspringbootdeveloper/")
           }
-          className="cursor-pointer hover:text-blue-500 transition duration-300"
-
+          className="cursor-pointer text-white hover:text-blue-400 transition duration-300"
         />
         <FaGithub
-          onClick={() =>
-            (window.location.href = "https://github.com/sathishsrini")
-          }
-
-          className="cursor-pointer hover:text-gray-700 transition duration-300"
-
+          onClick={() => (window.location.href = "https://github.com/sathishsrini")}
+          className="cursor-pointer text-white hover:text-gray-400 transition duration-300"
         />
         <FaInstagram
-          onClick={() =>
-            (window.location.href = "https://www.instagram.com/s_athish_s/")
-          }
-
-          className="cursor-pointer hover:text-pink-500 transition duration-300"
+          onClick={() => (window.location.href = "https://www.instagram.com/s_athish_s/")}
+          className="cursor-pointer text-white hover:text-pink-400 transition duration-300"
         />
         <FaSquareXTwitter
-          onClick={() =>
-            (window.location.href = "https://x.com/Sathish_fly")
-          }
-          className="cursor-pointer hover:text-black transition duration-300"
-
+          onClick={() => (window.location.href = "https://x.com/Sathish_fly")}
+          className="cursor-pointer text-white hover:text-gray-400 transition duration-300"
         />
       </div>
     </nav>

@@ -2,7 +2,6 @@ import React from "react";
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
 
-
 function Projects() {
   return (
     <div className="border-b border-neutral-900 pb-4 px-4">
@@ -45,16 +44,38 @@ function Projects() {
               <p className="mb-4 text-neutral-400 text-center lg:text-left">
                 {project.description}
               </p>
-              <div className="flex justify-center lg:justify-start">
+              <div className="flex justify-center lg:justify-start flex-wrap">
                 {project.technologies.map((tech, index) => (
                   <span
                     key={index}
-                    className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-white"
+                    className="mr-2 mb-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-white"
                   >
                     {tech}
                   </span>
                 ))}
               </div>
+
+              {/* Add Buttons for E-Commerce Project */}
+              {project.title === "E-Commerce Platform" && (
+                <div className="mt-4 flex flex-wrap justify-center lg:justify-start gap-4">
+                  <a
+                    href="https://www.linkedin.com/posts/sathishspringbootdeveloper_springboot-thymeleaf-ecommerce-activity-7302982824205172736-rGAL?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEWfgNgBe993xEb82kpasVUAXs9zyOwJK9I"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded transition"
+                  >
+                    🔗 Coding Part
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/posts/sathishspringbootdeveloper_springboot-ecommerce-mysql-activity-7302984708508815360-FGVk?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEWfgNgBe993xEb82kpasVUAXs9zyOwJK9I"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-4 rounded transition"
+                  >
+                    🔗 Output & UI Part
+                  </a>
+                </div>
+              )}
             </motion.div>
           </motion.div>
         ))}
