@@ -4,9 +4,8 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Technologies from "./components/Technologies";
 import Projects from "./components/Projects";
-import Courses from "./components/Courses";
-import Contact from "./components/Contact";
-
+import Courses from "./components/course";
+import Contact from "./components/contact";
 
 const App = () => {
   return (
