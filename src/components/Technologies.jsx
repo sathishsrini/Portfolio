@@ -4,6 +4,7 @@ import { RiReactjsLine } from "react-icons/ri";
 import { FaDatabase, FaJava } from "react-icons/fa";
 import { SiSpringboot, SiMysql, SiFirebase, SiBootstrap } from "react-icons/si";
 import powerbi from "../assets/powerbi.png";
+import { SKILLS } from "../constants";
 import { motion } from "framer-motion";
 
 
@@ -109,6 +110,32 @@ const Technologies = () => {
 
         </motion.div>
       </motion.div>
+
+      <div className="flex flex-wrap justify-center gap-6 px-4 mt-10">
+        {SKILLS.map((group, index) => (
+          <motion.div
+            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 50 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            key={index}
+            className="w-full sm:w-[45%] lg:w-[30%] rounded-2xl border border-neutral-800 bg-neutral-900/40 p-5"
+          >
+            <h3 className="mb-4 text-center text-xl font-semibold text-neutral-100">
+              {group.category}
+            </h3>
+            <div className="flex flex-wrap justify-center gap-2">
+              {group.skills.map((skill, i) => (
+                <span
+                  key={i}
+                  className="rounded bg-neutral-800 px-3 py-1 text-sm font-medium text-neutral-300"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </motion.div>
+        ))}
+      </div>
     </div>
   );
 };

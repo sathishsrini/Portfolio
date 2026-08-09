@@ -86,6 +86,29 @@ export const PROJECTS = [
 	},
 ];
 
+export const SKILLS = [
+	{
+		category: 'Backend',
+		skills: ['Java / Spring Boot', 'Node.js / Express', 'Python / Django / Flask', 'REST API Design', 'MVC / Middleware'],
+	},
+	{
+		category: 'Security & Auth',
+		skills: ['JWT / Refresh Tokens', 'RBAC (Partial) / Multi-tenant', 'CSRF Protection', 'Spring Security'],
+	},
+	{
+		category: 'Databases',
+		skills: ['MySQL / PostgreSQL', 'Firebase', 'JPA / Hibernate', 'Hashmap-based Optimisation', 'DB Normalisation'],
+	},
+	{
+		category: 'Tools & Platforms',
+		skills: ['Git / GitHub', 'TallyPrime Integration', 'Power BI', 'Docker (learning)', 'Electron (learning)'],
+	},
+	{
+		category: 'Frontend (Supporting)',
+		skills: ['React.js', 'jQuery / Bootstrap', 'Thymeleaf'],
+	},
+];
+
 export const CONTACT = {
 	name: 'Sathish S',
 	image: pass,
