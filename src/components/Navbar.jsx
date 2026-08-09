@@ -5,46 +5,58 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import resume from "../assets/resume.pdf";
 
 const Navbar = () => {
-  // Function to handle the Resume button click
   const handleResumeClick = () => {
-    // Open the resume in a new tab
     window.open(resume, "_blank");
   };
 
+  const openLink = (url) => {
+    window.open(url, "_blank");
+  };
+
   return (
-    <nav className="mb-10 flex items-center justify-between py-6">
-      <div className="flex flex-shrink-0 items-center">
-        <img className="mx-2 ml-10 w-10" src={logo} alt="logo" />
+    <nav className="mb-6 flex flex-wrap items-center justify-between py-4 mt-10 sm:py-6 md:mb-10">
+      {/* Logo - Left aligned */}
+      <div className="flex flex-shrink-0 items-center pl-4 sm:pl-10">
+        <img 
+          className="w-8 sm:w-10" 
+          src={logo} 
+          alt="logo" 
+        />
       </div>
-      <div className="m-8 mb-3 flex items-center justify-center gap-4 text-2xl">
+
+      {/* Navigation Items - Right aligned */}
+      <div className="flex items-center gap-3 pr-4 text-xl sm:gap-4 sm:text-2xl sm:pr-10">
         {/* Resume Button */}
         <button
           onClick={handleResumeClick}
-          className="cursor-pointer bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition duration-300"
+          className="cursor-pointer whitespace-nowrap rounded-lg bg-blue-500 px-3 py-1 text-sm text-white transition duration-300 hover:bg-blue-600 sm:px-4 sm:py-2 sm:text-base"
         >
           Resume
         </button>
 
         {/* Social Icons */}
-        <FaLinkedin
-          onClick={() =>
-            (window.location.href =
-              "https://www.linkedin.com/in/sathishspringbootdeveloper/")
-          }
-          className="cursor-pointer text-white hover:text-blue-400 transition duration-300"
-        />
-        <FaGithub
-          onClick={() => (window.location.href = "https://github.com/sathishsrini")}
-          className="cursor-pointer text-white hover:text-gray-400 transition duration-300"
-        />
-        <FaInstagram
-          onClick={() => (window.location.href = "https://www.instagram.com/s_athish_s/")}
-          className="cursor-pointer text-white hover:text-pink-400 transition duration-300"
-        />
-        <FaSquareXTwitter
-          onClick={() => (window.location.href = "https://x.com/Sathish_fly")}
-          className="cursor-pointer text-white hover:text-gray-400 transition duration-300"
-        />
+        <div className="flex items-center gap-4 sm:gap-3">
+          <FaLinkedin
+            onClick={() => openLink("https://www.linkedin.com/in/sathishspringbootdeveloper/")}
+            className="cursor-pointer text-white transition duration-300 hover:text-blue-400"
+            aria-label="LinkedIn"
+          />
+          <FaGithub
+            onClick={() => openLink("https://github.com/sathishsrini")}
+            className="cursor-pointer text-white transition duration-300 hover:text-gray-400"
+            aria-label="GitHub"
+          />
+          <FaInstagram
+            onClick={() => openLink("https://www.instagram.com/shadow_fiire/")}
+            className="cursor-pointer text-white transition duration-300 hover:text-pink-400"
+            aria-label="Instagram"
+          />
+          <FaSquareXTwitter
+            onClick={() => openLink("https://x.com/Sathish_fly")}
+            className="cursor-pointer text-white transition duration-300 hover:text-gray-400"
+            aria-label="Twitter"
+          />
+        </div>
       </div>
     </nav>
   );
